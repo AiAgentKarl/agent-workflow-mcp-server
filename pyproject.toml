@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-workflow-mcp-server"
+version = "0.1.0"
+description = "Reusable workflow templates for AI agents — share, discover and execute multi-step agent workflows"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "AiAgentKarl"}]
+keywords = ["mcp", "workflow", "templates", "ai-agents", "automation", "orchestration"]
+dependencies = ["mcp>=1.0.0", "pydantic>=2.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/AiAgentKarl/agent-workflow-mcp-server"
+Repository = "https://github.com/AiAgentKarl/agent-workflow-mcp-server"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
